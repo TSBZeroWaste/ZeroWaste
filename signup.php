@@ -18,8 +18,8 @@ $resultJobs = $pdo->query($sql);
 <meta charset="UTF-8">
 
 <head>
-  <link rel="stylesheet" href="header/reset.css">
-  <link rel="stylesheet" href="header/signup.css">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/signup.css">
 </head>
 
 <body>
