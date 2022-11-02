@@ -20,13 +20,50 @@
 }
 
 .login input {
+  margin-top: 10px;
   width: 300px;
   outline: none;
   border: none;
   border-bottom: 1px solid black;
+  font-size: 20px;
 }
 
 .login label {
   font-weight: bold;
+  font-size: 22px;
+}
+
+.login .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .btn a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.login .btn button {
+  height: 30px;
+  width: 150px;
+  border: none;
+  background-color: rgba(59, 59, 59, 0.893);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.login .btn button:hover {
+  opacity: 80%;
+}
+
+.login .btn button:active {
+  opacity: 100%;
 }
 /*# sourceMappingURL=login.css.map */
