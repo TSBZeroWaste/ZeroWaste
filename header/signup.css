@@ -1,0 +1,77 @@
+.create {
+  max-width: 1000px;
+  padding: 40px 30px;
+  margin: 0 auto;
+}
+
+.create h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.create form {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.create form label {
+  text-align: left;
+  padding-top: 30px;
+  width: 200px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.create form input {
+  width: 270px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+}
+
+.create form .long {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+.create form .create-btn {
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+}
+
+.create form .create-btn button {
+  height: 30px;
+  margin-top: 30px;
+  width: 200px;
+  border: none;
+  background-color: rgba(59, 59, 59, 0.893);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.create form .create-btn button:hover {
+  opacity: 80%;
+}
+
+.create form .create-btn button:active {
+  opacity: 100%;
+}
+
+.create form .outlink {
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #aaa;
+}
+/*# sourceMappingURL=signup.css.map */
