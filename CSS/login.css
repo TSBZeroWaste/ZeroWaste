@@ -1,0 +1,32 @@
+.login {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.login h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.login .mb20 {
+  margin-bottom: 20px;
+}
+
+.login .block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login input {
+  width: 300px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.login label {
+  font-weight: bold;
+}
+/*# sourceMappingURL=login.css.map */
