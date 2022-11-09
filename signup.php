@@ -1,15 +1,10 @@
 <?php
-# データベースの値を取得する
-require_once('config.php');
-$pdo = new PDO(DSN, DB_USER, DB_PASS);
 
 # jobsのデータを取得
-$sql = '';
-$sql .= ' SELECT ';
-$sql .= ' * ';
-$sql .= ' FROM ';
-$sql .= ' zw_jobs ';
-$resultJobs = $pdo->query($sql);
+require_once('sql/DAO.php');
+$dao = new DAO(true);
+$jobs = $dao->getJobs();
+
 ?>
 <!DOCTYPE html>
 
@@ -71,9 +66,11 @@ $resultJobs = $pdo->query($sql);
         <label for="job">職業：</label>
         <select class="long" name="job" id="job">
           <option>--選択--</option>
-          <?php while ($row = $resultJobs->fetch(PDO::FETCH_ASSOC)) : ?>
-            <option name="job" value="<?= $row['id']; ?>"><?= $row['name']; ?></option>
-          <?php endwhile; ?>
+          <?php
+          foreach ($jobs as $job) {
+            echo '<option name="job" value="'.$job['id'].'">'.$job['name'].'</option>';
+          }
+          ?>
         </select>
       </div>
       <div class="create-btn">
