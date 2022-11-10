@@ -3,6 +3,8 @@
 # jobsのデータを取得
 require_once('sql/DAO.php');
 $dao = new DAO();
+$dao->connectToLocal();
+//$dao->connectToRemote();
 $jobs = $dao->getJobs();
 
 ?>
