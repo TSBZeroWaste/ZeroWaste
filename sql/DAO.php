@@ -6,12 +6,15 @@ class DAO {
 
     public $pdo;
 
-    function __construct(bool $is_debug) {
-        if ($is_debug) {
-            $this->pdo = new PDO(TEST_DSN, TEST_DB_USER, TEST_DB_PASS);
-        } else {
-            $this->pdo = new PDO(DSN, DB_USER, DB_PASS);
-        }
+    /* データベースに接続 */
+
+    // ローカルDBに接続
+    public function connectToLocal() {
+        $this->pdo = new PDO(TEST_DSN, TEST_DB_USER, TEST_DB_PASS);
+    }
+    // リモートDBに接続
+    public function connectToRemote() {
+        $this->pdo = new PDO(DSN, DB_USER, DB_PASS);
     }
 
     /* テーブルの初期化 */
