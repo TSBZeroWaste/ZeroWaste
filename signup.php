@@ -2,7 +2,7 @@
 
 # jobsのデータを取得
 require_once('sql/DAO.php');
-$dao = new DAO(true);
+$dao = new DAO();
 $jobs = $dao->getJobs();
 
 ?>
